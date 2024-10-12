@@ -1410,7 +1410,7 @@
 				  <h2 class="ftco-heading-2">How to Find Us ??</h2>
 				  	<ul class="list-unstyled">
 					  <li><span class="icon icon-map-marker"></span><span class="text" style="color: #1c2d37;">&nbsp &nbsp &nbsp &nbsp SCO-05, FIRST FLOOR, ARISTA COMPLEX,Kharar - Kurali Rd, near AMAYRA GREEN, Kharar, Aujala, Punjab 140301</span></li>
-					  <li><a href="#"><span class="icon icon-phone"></span><span class="text">&nbsp &nbsp &nbsp &nbsp+91 81461 43480</span></a></li>
+					  <li><a href="#"><span class="icon icon-phone"></span><span class="text">&nbsp &nbsp &nbsp +91 81461 43480 <br>&nbsp &nbsp &nbsp &nbsp &nbsp  +91 82389 12165</span></a></li>
 					  <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">risingstarbuiltec@gmail.com</span></a></li>
 					</ul>
 			
@@ -1425,7 +1425,46 @@
 		  </div>
 		</div>
 	  </footer>
-    
+    <!-- Modal Structure -->
+<!-- Modal Structure -->
+<!-- Modal Structure -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="contactModalLabel" style="font-size: 1.3rem;color: white; font-weight: bold;">Get in Touch or Add Your Property Details</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <!-- Your Form Inside Modal -->
+		  <form action="https://formspree.io/f/xwpkkpkr" method="POST" class="p-3 contact-form">
+			<div class="form-group">
+			  <label for="name" style="font-size: 0.85rem;">Your Name</label>
+			  <input type="text" class="form-control" placeholder="Enter your name" name="name" required style="height: 38px;">
+			</div>
+			<div class="form-group">
+			  <label for="email" style="font-size: 0.85rem;">Your Email</label>
+			  <input type="email" class="form-control" placeholder="Enter your email" name="email" required style="height: 38px;">
+			</div>
+			<div class="form-group">
+			  <label for="mobile" style="font-size: 0.85rem;">Mobile Number</label>
+			  <input type="tel" class="form-control" placeholder="Enter mobile number" name="mobile" pattern="[0-9]{10}" required style="height: 38px;">
+			</div>
+			<div class="form-group">
+			  <label for="message" style="font-size: 0.85rem;">Message</label>
+			  <textarea name="message" id="" cols="30" rows="3" class="form-control" placeholder="Enter your message" required></textarea>
+			</div>
+			<div class="form-group text-right">
+			  <input type="submit" value="Send Message" class="btn btn-primary" style="padding: 8px 15px; font-size: 1rem;">
+			</div>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
   
 
   <!-- loader -->
@@ -1445,6 +1484,13 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
+  <script>
+	$(document).ready(function(){
+	  // Show the modal when the page is fully loaded
+	  $('#contactModal').modal('show');
+	});
+  </script>
+  
   <script src="js/scrollax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
