@@ -8076,7 +8076,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #1c2d37 !important;
       position: relative;
       top: 0; } }
   .ftco-navbar-light .navbar-brand {
@@ -10269,4 +10269,64 @@ textarea.form-control {
     background-color: #1C2D37;
   }
   
+}
+
+.img-slider{
+  height: 300px;
+  width:90%;
+  border-radius: 50px;
+  margin-top: -120px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8) !important; 
+  filter: brightness(70%);
+}
+
+.centered-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eed26e;
+  font-weight: 600;
+}
+
+.img-slider-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+@media (max-width: 576px) {
+            /* Responsive adjustments for mobile */
+            .img-slider {
+                width: 70%;
+                margin-bottom: 110px;
+            }
+            .last-slider{
+              margin-bottom: -80px;
+            }
+            .centered-text {
+              position: absolute;
+              top: 20%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: #eed26e;
+              font-weight: 600;
+            }
+
+            .carousel-inner {
+                height: auto; /* Adjust height for smaller screens */
+            }
+        }
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darkens the background */
 }
