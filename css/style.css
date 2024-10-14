@@ -10119,13 +10119,13 @@ textarea.form-control {
       height: 150vh !important;
     }
     .carousel-item{
-      height: 100vh;
+      height: 135vh;
     }
     .carousel-indicators {
-      bottom: 460px !important;
+      bottom: 150px !important;
     }
     .img-slider{
-      margin-top: -400px;
+      margin-top: -500px;
     }
 }
 .carousel-indicators {
